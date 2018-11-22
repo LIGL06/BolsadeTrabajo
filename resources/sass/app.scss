@@ -1,3 +1,6 @@
+// Variables
+@import 'variables';
+
 html {
   min-height: 100%;
   position: relative;
@@ -14,7 +17,7 @@ html body {
 
 footer {
   color: #fff;
-  background: #680e1b;
+  background: $body-color;
   bottom: 0;
   width: 100%;
   position: absolute;
@@ -26,9 +29,6 @@ footer hr {
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
-@import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
