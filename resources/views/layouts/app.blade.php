@@ -9,7 +9,8 @@
     <meta property="og:title" content="Bolsa de trabajo en {{env('APP_NAME')}}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{env('APP_URL')}}"/>
-    <meta property="og:image" content="https://res.cloudinary.com/hammock-software/image/upload/v1540740818/LOGO_DIRECCION_DE_DESARROLLO_ECONOMIGO_3183_d60tju.png"/>
+    <meta property="og:image"
+          content="{{env('APP_LOGO_FOOTER')}}"/>
     <meta property="og:image:alt" content="{{env('APP_LOGO_ICON')}}"/>
     <meta property="og:description" content="Crea, ve y encuentra trabajo en {{env('APP_NAME')}}."/>
     <!-- CSRF Token -->
@@ -112,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 col-md-2 col-lg-1 my-auto d-none d-sm-block">
-                    <img src="https://res.cloudinary.com/hammock-software/image/upload/v1540740818/LOGO_DIRECCION_DE_DESARROLLO_ECONOMIGO_3183_d60tju.png"
+                    <img src="{{env('APP_LOGO_FOOTER')}}"
                          class="img-fluid img-thumbnail">
                 </div>
                 <div class="col-12 col-md-10">
