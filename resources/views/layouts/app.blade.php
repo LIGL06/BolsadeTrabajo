@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Iván García <luis.garcialuna@outlook.com>">
+    <meta property="og:title" content="Bolsa de trabajo en {{env('APP_NAME')}}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
+    <meta property="og:image" content="{{env('APP_LOGO_URL')}}"/>
+    <meta property="og:image:alt" content="{{env('APP_LOGO_ICON')}}"/>
+    <meta property="og:description" content="Crea, ve y encuentra trabajo en {{env('APP_NAME')}}."/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Ciudad Madero') }}</title>
+    <title>Trabajos en {{env('APP_NAME')}}</title>
     <link rel="icon" type="image/png" sizes="196x196"
-          href="https://res.cloudinary.com/hammock-software/image/upload/v1539446336/icon.png">
+          href="{{env('APP_LOGO_ICON')}}">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.min.css" rel="stylesheet"
