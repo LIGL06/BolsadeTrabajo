@@ -51,7 +51,7 @@
                                                     <b>{{mb_convert_case($job->company->name,MB_CASE_TITLE, "UTF-8")}}</b>
                                                 </p>
                                                 @if($job->info)
-                                                    <span class="mb-0">Descipción de vacante:</span>
+                                                    <span class="mb-0">Descripción de vacante:</span>
                                                     {!!$job->info->skills!!}
                                                 @endif
                                             </div>
@@ -146,7 +146,7 @@
                          alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Permisos</h5>
-                        <p class="card-text">Perece ser que aún no tienes tu perfil.</p>
+                        <p class="card-text">{{__('Parece ser que no has creado tu perfil, debes hacerlo para poder aplicar a oportunidades.')}}</p>
                         <a class="btn btn-primary" href={{route('createProfile')}} >Crear perfil</a>
                     </div>
                 </div>

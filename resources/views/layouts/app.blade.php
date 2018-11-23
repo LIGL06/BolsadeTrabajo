@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 @if(Auth::user() && Auth::user()->isAdmin())
-                    <a class="nav-item nav-link" href="{{ url('/admin') }}">Admnistrador</a>
+                    <a class="nav-item nav-link" href="{{ url('/admin') }}">Administrador</a>
                 @endif
                 @if(Auth::user() && Auth::user()->isEmployee())
                     <a class="nav-item nav-link" href="{{ url('/employees') }}">Aspirantes</a>

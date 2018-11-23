@@ -192,7 +192,7 @@
                     <!--/row-->
                     <hr>
                     <div class="row pb-5">
-                        <h5 class="text-center col-12">Aquí puedes ver los ultimos empleos creados de empresas
+                        <h5 class="text-center col-12">Aquí puedes ver los últimos empleos creados de empresas
                             validas</h5>
                         @foreach($jobs as $job)
                             <div class="col-md-3 col-12 pb-1">

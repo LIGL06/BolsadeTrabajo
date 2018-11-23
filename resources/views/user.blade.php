@@ -74,7 +74,7 @@
                                             </div>
                                             <div class="col-md-4 col-12">
                                                 <label for="doB"><h4>{{ __('CURP') }}</h4></label>
-                                                {!! Form::text('uniqueKey', $user->info->uniqueKey, ['class'=> "form-control {{ $errors->has('uniqueKey') ? ' is-invalid' : '' }}", 'placeholder' => 'Clave unica de regitro poblacional']) !!}
+                                                {!! Form::text('uniqueKey', $user->info->uniqueKey, ['class'=> "form-control {{ $errors->has('uniqueKey') ? ' is-invalid' : '' }}", 'placeholder' => 'Clave única de registro poblacional']) !!}
                                                 @if ($errors->has('uniqueKey'))
                                                     <span class="invalid-feedback"
                                                           role="alert"><strong>{{ $errors->first('uniqueKey') }}</strong></span>

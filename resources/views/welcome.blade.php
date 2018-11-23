@@ -34,7 +34,7 @@
                         <img src="https://res.cloudinary.com/hammock-software/image/upload/c_scale,g_south_east,h_100,l_icon.png/v1540232381/pexels3.jpg" class="w-100">
                         <div class="container">
                             <div class="carousel-caption text-right">
-                                <h3 class="text-white">Ayudanos a crecer contigo en {{env('APP_NAME')}}.</h3>
+                                <h3 class="text-white">Ayúdanos a crecer contigo en {{env('APP_NAME')}}.</h3>
                                 <p><a class="btn btn-lg btn-primary"
                                       href={{url('employers')}} role="button">Empresas</a></p>
                             </div>
