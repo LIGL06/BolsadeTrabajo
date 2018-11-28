@@ -159,13 +159,7 @@
                                 <div class="form-group row">
                                     <h5>Descripción de vacante a detalle:</h5>
                                     <div class="col-12">
-                                        @if($job->info)
-                                            <textarea name="skills" cols="30"
-                                                      rows="10" required>{!!$job->info->skills!!}</textarea>
-                                        @else
-                                            <textarea name="skills" cols="30"
-                                                      rows="10" required>Este campo es obligatorio ser modificado</textarea>
-                                        @endif
+                                        <textarea name="skills" cols="30" rows="10" required>Este campo es obligatorio ser modificado</textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
