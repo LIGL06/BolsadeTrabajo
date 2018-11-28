@@ -8,7 +8,7 @@ const app = new Vue({
     },
     created() {
         if (window.Laravel.user.id != null) {
-            axios.post('notifications').then(response => {
+            axios.post(process.env.MIX_APP_URL + 'notifications').then(response => {
                 this.notifications = response.data;
             });
             Echo.private('App.User.' + window.Laravel.user.id).notification((response) => {
