@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use App\Employer;
+use App\Exports\EmployersExport;
 use App\Notifications\newNotification;
 use App\User;
+use function foo\func;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 use Validator;
 
 class EmployerController extends Controller

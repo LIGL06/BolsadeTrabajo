@@ -64,17 +64,18 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="{{url('/admin/export')}}" class="btn btn-sm btn-danger">Descargar Reporte</a>
                     </div>
                     <!--/row-->
                     <hr>
                     <div class="row pb-5">
-                        <div class="col-md-3 col-12">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <h2 class="text-center">Empresas</h2>
                             <div class="card card-default card-block h-100">
                                 <div class="list-group pre-scrollable">
                                     @foreach($companies as $company)
                                         <a
-                                           class="list-group-item list-group-item-action flex-column align-items-start">
+                                                class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="d-flex w-100 justify-content-between">
                                                 <h5 class="mb-1">{{mb_convert_case($company->name,MB_CASE_TITLE, "UTF-8")}}</h5>
                                                 <small>{{\Carbon\Carbon::parse($company->created_at)->format('M d')}}</small>
@@ -97,13 +98,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <h2 class="text-center">Empleadores</h2>
                             <div class="card card-default card-block h-100">
                                 <div class="list-group pre-scrollable">
                                     @foreach($employers as $employer)
                                         <a
-                                           class="list-group-item list-group-item-action flex-column align-items-start">
+                                                class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="d-flex w-100 justify-content-between">
                                                 <h5 class="mb-0">{{mb_convert_case($employer->user->name,MB_CASE_TITLE, "UTF-8")}}</h5>
                                                 <small>{{\Carbon\Carbon::parse($employer->created_at)->format('M d')}}</small>
@@ -126,7 +127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <h2 class="col-12 text-center">Empleos</h2>
                             <div class="card card-default card-block h-100">
                                 <div class="list-group pre-scrollable">
@@ -159,7 +160,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-12">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <h2 class="text-center">Aspirantes</h2>
                             <div class="card card-default card-block h-100">
                                 <div class="list-group pre-scrollable">
