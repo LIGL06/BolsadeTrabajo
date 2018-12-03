@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use App\Employer;
+use App\Exports\CompaniesExport;
 use App\User;
 use App\Notifications\newNotification;
 use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
 use Validator;
 use Illuminate\Http\Request;
 
@@ -117,5 +119,13 @@ class CompaniesController extends Controller
     {
         $subTitles = \DB::table('companies')->where("name", "LIKE", "%{$request->input('query')}%")->pluck('name');
         return response()->json($subTitles);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
+     */
+    public function export()
+    {
+        return Excel::download(new CompaniesExport, "empresas-" . \Carbon\Carbon::now()->toDateString() . ".xlsx");
     }
 }

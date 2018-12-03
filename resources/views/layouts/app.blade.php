@@ -119,8 +119,8 @@
                 <div class="col-12 col-md-10">
                     <h5 class="mt-2 mb-0">R. Ayuntamiento de Cuidad Madero</h5>
                     <b class="mb-0">Dirección de Desarrollo Económico</b><br>
-                    <small>Av. Álvaro Obregón 201 Sur, Zona Centro, 89400 Cd Madero, Tamps.</small>
-                    <small><b>(833) 305 2300</b></small>
+                    <small>Av.Tamaulipas esquina con Av.Monterrey s/n, Unidad Nacional, 89510 Cd Madero, Tamps.</small>
+                    <small><b>(833) 1362 9821</b></small>
                 </div>
             </div>
         </div>
